@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>CSA</title>
+  <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div data-menu-overlay></div>
+  <div class="container header__container">
+    <div class="header__inner">
+      <a class="header__logo">
+        <img src="./img/logo.svg" alt="Logo">
+      </a>
+      <nav class="header__nav" data-menu>
+        <ul class="header__list list-reset">
+          <li class="header__item">
+            <a href="#" class="header__link" data-menu-item>Home</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link" data-menu-item>Course Program</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link" data-menu-item>Benefits</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link" data-menu-item>Testimonials</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link" data-menu-item>Take Discovery Call</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="tel:+17785885310" class="header__phone">+1 778 588 5310</a>
+      <div class="header__burger-wrap">
+        <button class="burger header__burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+          <span class="burger__line"></span>
+      </div>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="certification section-margin">
+  <div class="certification__container container">
+    <div class="certification__left">
+      <h1 class="certification__title main-title">Get Cybersecurity Certification: A Dynamic 10-Day Online Course</h1>
+      <p class="certification__desc desc-basic">Schedule a discovery call to learn how our 10-day course can accelerate your cybersecurity skills from zero to hero.</p>
+      <form class="certification__form form">
+        <input type="text" placeholder="Name" class="form__field form__field--half name" name="name">
+        <input type="email" placeholder="E-mail" class="form__field form__field--half email" name="email">
+        <div class="form__field form__field-wrap">
+          <input type="tel" class="form__field inputForSelect input-tel tel" name="tel">
+          <select name="select">
+            <option data-country-flag="canada" value="canada" aria-label="canada"></option>
+            <option data-country-flag="urugvay" value="urugvay"></option>
+            <option data-country-flag="china" value="china"></option>
+            <option data-country-flag="argentina" value="argentina"></option>
+          </select>
+        </div>
+        <button class="form__field form__submit-btn">Take Discovery Call</button>
+        <p class="form-message-wrong" role="alert">Oops! Something went wrong while submitting the form.</p>
+      </form>
+    </div>
+    <div class="certification__right">
+      <img class="certification__img" src="./img/certificat.svg" alt="certificat">
+      <small class="certification__bottom-text section-bottom-text">Globally-Recognized Certification</small>
+    </div>
+  </div>
+</section>
+
+      <section class="video section-margin">
+  <div class="video__container container">
+    <div class="video__top">
+      <h1 class="video__title main-title">You can combine the course with work there will be no time</h1>
+      <p class="video__desc desc-basic">Watch course author Kobi Gabay The Founder Of CYBA video to learn the details in <b>2 minutes</b></p>
+    </div>
+    <div class="video__bottom">
+      <video class="video__video" src="./video.mov" poster="./img/video.jpg"></video>
+      <button class="btn-reset video__button" aria-label="play video"></button>
+      <small class="section-bottom-text">Kobi Gabay, The Founder Of CYBA</small>
+    </div>
+  </div>
+</section>
+
+      <section class="learn">
+  <div class="container learn__container">
+    <div class="learn__inner">
+      <h1 class="learn__title main-title">What is CCT and what you will learn?</h1>
+      <p class="learn__desc desc-basic">CCT — Certified cyber security technician. An entry-level program, focused
+        on hands-on practice, with more than <b>50% of training time</b> dedicated to labs. Dive into the details below.
+      </p>
+      <ul class="learn__list list-reset desc-basic">
+        <li class="learn__item">
+          <div class="learn__title-wrap">
+            <h2 class="learn__item-title desc-basic">Key Concepts in Cybersecurity</h2>
+            <button class="learn__item-button btn-reset" type="button"></button>
+          </div>
+          <p class="learn__item-text text-medium">Grasp the Core: Learn the fundamentals of securing digital
+            environments and understand the key concepts that drive the cybersecurity industry.</p>
+        </li>
+        <li class="learn__item">
+          <div class="learn__title-wrap">
+
+            <h2 class="learn__item-title desc-basic">Security Threats, Vulnerabilities and Attacks</h2>
+            <button class="learn__item-button btn-reset" type="button"></button>
+          </div>
+          <p class="learn__item-text text-medium">Assess & Identify: Master the art of identifying risks, pinpointing
+            weaknesses, and understanding the nature of malicious actions in digital realms.</p>
+        </li>
+        <li class="learn__item">
+          <div class="learn__title-wrap">
+
+            <h2 class="learn__item-title desc-basic">Types of Malware</h2>
+            <button class="learn__item-button btn-reset" type="button"></button>
+          </div>
+          <p class="learn__item-text text-medium">Unmask Malicious Software: Dive deep into the various types of malware
+            and how they compromise digital security.</p>
+        </li>
+        <li class="learn__item">
+          <div class="learn__title-wrap">
+
+            <h2 class="learn__item-title desc-basic">Authentication and Authorization</h2>
+            <button class="learn__item-button btn-reset" type="button"></button>
+          </div>
+          <p class="learn__item-text text-medium">Control Access: Understand the intricacies of user identity and manage
+            access permissions effectively.</p>
+        </li>
+        <li class="learn__item">
+          <div class="learn__title-wrap">
+
+            <h2 class="learn__item-title desc-basic">Network and Application Security Design</h2>
+            <button class="learn__item-button btn-reset" type="button"></button>
+          </div>
+          <p class="learn__item-text text-medium">Build Fortified Structures: Discover the best practices for designing
+            secure digital environments to mitigate threats and vulnerabilities.</p>
+        </li>
+        <li class="learn__item">
+          <div class="learn__title-wrap">
+
+            <h2 class="learn__item-title desc-basic">Virtualization, Cloud Computing and Security</h2>
+            <button class="learn__item-button btn-reset" type="button"></button>
+          </div>
+          <p class="learn__item-text text-medium">Harness the Future: Learn how to exploit modern technology for scalable, secure operations and better threat management.</p>
+        </li>
+        <li class="learn__item">
+          <div class="learn__title-wrap">
+
+            <h2 class="learn__item-title desc-basic">Wireless Network Basics, Encryption and Security</h2>
+            <button class="learn__item-button btn-reset" type="button"></button>
+          </div>
+          <p class="learn__item-text text-medium">Master Wireless Security: Gain insights into the principles of secure wireless connectivity, from basic network concepts to advanced encryption techniques.</p>
+        </li>
+        <li class="learn__item">
+          <div class="learn__title-wrap">
+
+            <h2 class="learn__item-title desc-basic">Mobile and IoT</h2>
+            <button class="learn__item-button btn-reset" type="button"></button>
+          </div>
+          <p class="learn__item-text text-medium">Connect & Protect: Navigate through the world of smart devices, focusing on enhanced digital experiences and seamless connectivity without compromising security.</p>
+        </li>
+        <li class="learn__item">
+          <div class="learn__title-wrap">
+
+            <h2 class="learn__item-title desc-basic">Cryptography and Data Security</h2>
+            <button class="learn__item-button btn-reset" type="button"></button>
+          </div>
+          <p class="learn__item-text text-medium">Guard Your Secrets: Utilize encryption techniques effectively to safeguard sensitive information and ensure data integrity.</p>
+        </li>
+        <li class="learn__item">
+          <div class="learn__title-wrap">
+
+            <h2 class="learn__item-title desc-basic">Network Troubleshooting, Monitoring and Analysis</h2>
+            <button class="learn__item-button btn-reset" type="button"></button>
+          </div>
+          <p class="learn__item-text text-medium">Solve & Evolve: Develop skills for resolving network performance issues, while proficiently observing and analyzing network activities.</p>
+        </li>
+        <li class="learn__item">
+          <div class="learn__title-wrap">
+
+            <h2 class="learn__item-title desc-basic">Incident Handling and Computer Forensics</h2>
+            <button class="learn__item-button btn-reset" type="button"></button>
+          </div>
+          <p class="learn__item-text text-medium">Respond & Analyze: Learn to manage security incidents effectively and delve into the realm of digital evidence analysis and computer forensics.</p>
+        </li>
+        <li class="learn__item">
+          <div class="learn__title-wrap">
+
+            <h2 class="learn__item-title desc-basic">Disaster Recovery and Risk Management</h2>
+            <button class="learn__item-button btn-reset" type="button"></button>
+          </div>
+          <p class="learn__item-text text-medium">Plan & Mitigate: Equip yourself with the knowledge to plan for resilience, manage disasters, and take a proactive approach to risk mitigation.</p>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="red block"></div>
+    <div class="green block"></div> -->
+  </div>
+</section>
+
+      <section class="courses">
+  <div class="container courses__container">
+    <div class="courses__inner">
+      <h1 class="main-title courses__title">3 additional courses <br> included for free</h1>
+      <ul class="courses__list list-reset">
+        <li class="courses__item">
+          <div class="courses__item-top">
+            <h2 class="courses__item-title">Network Defence Essentials</h2>
+            <p class="courses__item-desc text-medium text-medium--medium">Get a hands-on practical experience exploring the key components of information security such.</p>
+          </div>
+          <div class="courses__item-bottom">
+            <div class="courses__item-icon">Hours: 14+</div>
+            <div class="courses__item-icon">Modules: 12</div>
+          </div>
+        </li>
+        <li class="courses__item list-reset">
+          <div class="courses__item-top">
+            <h2 class="courses__item-title">Ethical Hacking Essentials</h2>
+            <p class="courses__item-desc text-medium text-medium--medium">Get a hands-on practical experience exploring the key components of information security such.</p>
+          </div>
+          <div class="courses__item-bottom">
+            <div class="courses__item-icon">Hours: 14+</div>
+            <div class="courses__item-icon">Modules: 12</div>
+          </div>
+        </li>
+        <li class="courses__item list-reset">
+          <div class="courses__item-top">
+            <h2 class="courses__item-title">Digital Forensics Essentials</h2>
+            <p class="courses__item-desc text-medium text-medium--medium">Get a hands-on practical experience exploring the key components of information security such.</p>
+          </div>
+          <div class="courses__item-bottom">
+            <div class="courses__item-icon">Hours: 14+</div>
+            <div class="courses__item-icon">Modules: 12</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="employment">
+  <div class="container employment__container">
+    <div class="employment__inner">
+      <div class="employment__top">
+        <h1 class="employment__title main-title">We help students find employment</h1>
+        <p class="desc-basic employment__desc">We offer short-term, fast-paced certification-oriented studies to help
+          you obtain globally-recognized cyber security certifications quick.</p>
+        <ul class="employment__list desc-basic list-reset">
+          <li>Network defence essentials</li>
+          <li>Job Placement Assistance</li>
+          <li>Guidance from Coordinators</li>
+        </ul>
+        <form class="certification__form form employment__form">
+          <input type="text" placeholder="Name" class="form__field form__field--half name" name="name">
+          <input type="email" placeholder="E-mail" class="form__field form__field--half email" name="email">
+          <div class="form__field form__field-wrap">
+            <input type="tel" class="form__field inputForSelect input-tel tel" name="tel">
+            <select name="select">
+              <option data-country-flag="canada" value="canada"></option>
+              <option data-country-flag="urugvay" value="urugvay"></option>
+              <option data-country-flag="china" value="china"></option>
+              <option data-country-flag="argentina" value="argentina"></option>
+            </select>
+          </div>
+          <button class="form__field form__submit-btn">Take Discovery Call</button>
+          <p class="form-message-wrong">Oops! Something went wrong while submitting the form.</p>
+        </form>
+      </div>
+      <div class="employment__bottom">
+        <img src="./img/employment.svg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="cybersecurity">
+  <div class="container cybersecurity__container">
+    <div class="cybersecurity__inner">
+      <h1 class="cybersecurity__title main-title">Why Learn Cybersecurity?</h1>
+      <ul class="list-reset cybersecurity__list">
+        <li class="cybersecurity__item">
+          <p class="cybersecurity__item-desc desc-basic">Cyber pros in Canada earn a handsome <b>$67K-<br>$113K</b>
+             annually</p>
+        </li>
+        <li class="cybersecurity__item">
+          <p class="cybersecurity__item-desc desc-basic"><b>86%</b> of Canadian organizations experienced at least one
+            cyberattack in <b>2022</b></p>
+        </li>
+        <li class="cybersecurity__item">
+          <p class="cybersecurity__item-desc desc-basic">Still, most businesses are not prepared to defend themselves
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="choose">
+  <div class="container choose__container">
+    <div class="choose__inner">
+      <div class="choose__top">
+        <h1 class="choose__title main-title">Why choose us?</h1>
+        <blockquote>
+          <p class="choose__desc desc-basic">''We offer short-term, fast-paced certification-oriented studies to help you
+            obtain globally-recognized cyber security certifications quick.''</p>
+        </blockquote>
+        <address class="choose__desc-wide desc-basic"><b>Kobi Gabay</b>, The Founder Of CYBA</address>
+        <div class="choose__tags">
+          <div class="choose__icon icon">Short-term</div>
+          <div class="choose__icon icon">Globally-recognized</div>
+          <div class="choose__icon icon">Flexible schedule</div>
+          <div class="choose__icon icon">Hands-on labs</div>
+          <div class="choose__icon icon">Real-life scenarios</div>
+        </div>
+      </div>
+      <div class="choose__bottom">
+        <img src="./img/choose.png" alt="" class="choose__img">
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="say">
+  <div class="container say__container">
+    <div class="say__inner">
+      <h1 class="say__title main-title">What our students say?</h1>
+      <ul class="say__list list-reset">
+        <li>
+          <blockquote>
+            <div class="wrap">
+              <img src="./img/avatars-mobile1.png" alt="photo user">
+              <cite>Arjun, Age 27 <br> <span>Network Engineer</span> </cite>
+            </div>
+            <div class="say__ratio">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+            </div>
+            <p class="say__text text-medium text-medium--medium">I used to view cybersecurity as a complex labyrinth.
+              Thanks to the training I received, it’s now a fascinating puzzle that I can confidently solve. This course
+              covered everything — from malware to network security — enhancing my professional skill set.</p>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote>
+            <div class="wrap">
+              <img src="./img/avatars-mobile2.png" alt="photo user">
+              <cite>Emily, Age 35 <br> <span>Freelance Web Developer</span> </cite>
+            </div>
+            <div class="say__ratio">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+            </div>
+            <p class="say__text text-medium text-medium--medium">The module on Mobile and IoT was spot-on for my freelance work! However, the whole course was invaluable. The quality of instruction has made a tangible difference to the services I deliver to my clients.</p>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote>
+            <div class="wrap">
+              <img src="./img/avatars-mobile3.png" alt="photo user">
+              <cite>Hari, Age 40 <br> <span>Data Analyst</span> </cite>
+            </div>
+            <div class="say__ratio">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+            </div>
+            <p class="say__text text-medium text-medium--medium">Enrolling in this course was a turning point in my career. The depth and breadth of topics covered drastically elevated my understanding of cybersecurity. I can’t overstate the value it’s added to my role as a data analyst.</p>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote>
+            <div class="wrap">
+              <img src="./img/avatars-mobile4.png" alt="photo user">
+              <cite>Laura, Age 31 <br> <span>IT Professional</span> </cite>
+            </div>
+            <div class="say__ratio">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+            </div>
+            <p class="say__text text-medium text-medium--medium">The training is exceptional. It’s comprehensive yet practical, making a significant difference in my day-to-day work in IT security. Big thumbs up!</p>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote>
+            <div class="wrap">
+              <img src="./img/avatars-mobile5.png" alt="photo user">
+              <cite>Ravi, Age 24 <br> <span>Computer Science Graduate</span> </cite>
+            </div>
+            <div class="say__ratio">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+            </div>
+            <p class="say__text text-medium text-medium--medium">The foundations laid by the Cyba Academy have been pivotal in my understanding of cybersecurity. I now feel confident to dive into this challenging industry.</p>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote>
+            <div class="wrap">
+              <img src="./img/avatars-mobile6.png" alt="photo user">
+              <cite>Priya, Age 22 <br> <span>Computer Science Student </span> </cite>
+            </div>
+            <div class="say__ratio">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+              <img src="./img/star.svg" alt="" aria-hidden="true">
+            </div>
+            <p class="say__text text-medium text-medium--medium">The CCT course was a revelation! It’s a comprehensive deep-dive into everything cybersecurity. With this training, I feel armed and ready for any challenge that my future career might throw at me.</p>
+          </blockquote>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="gift">
+  <div class="container gift__container">
+    <div class="gift__inner">
+      <div class="gift__top">
+        <h1 class="gift__title main-title">Gift a Course</h1>
+        <p class="gift__desc desc-basic">You can purchase a course as a gift. To do this, simply provide the email
+          address of the person you want to gift the course to.</p>
+      </div>
+      <div class="gift__bottom">
+        <img src="./img/gift.svg" alt="">
+        <small class="section-bottom-text">Give the course to a friend</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="call">
+  <div class="call__container container">
+    <div class="call__left">
+      <h1 class="call__title main-title">Schedule a 10-minute discovery call for a more in-depth exploration</h1>
+      <p class="call__desc desc-basic">Learn how our 10-day course can accelerate your cybersecurity skills from zero to hero.</p>
+      <form class="certification__form form call__form">
+        <input type="text" placeholder="Name" class="form__field form__field--half name" name="name">
+        <input type="email" placeholder="E-mail" class="form__field form__field--half email" name="email">
+        <div class="form__field form__field-wrap">
+          <input type="tel" class="form__field inputForSelect input-tel tel" name="tel">
+          <select name="select">
+            <option data-country-flag="canada" value="canada"></option>
+            <option data-country-flag="urugvay" value="urugvay"></option>
+            <option data-country-flag="china" value="china"></option>
+            <option data-country-flag="argentina" value="argentina"></option>
+          </select>
+        </div>
+        <button class="form__field form__submit-btn">Take Discovery Call</button>
+        <p class="form-message-wrong">Oops! Something went wrong while submitting the form.</p>
+      </form>
+    </div>
+    <div class="call__right">
+      <img class="call__img" src="./img/call.svg" alt="">
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <ul class="footer__social list-reset">
+        <li class="social__item">
+          <a href="#" class="social__link inst">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#inst"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link fb">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link in">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#in"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link x">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#x"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <small class="footer__copyright desc-basic">© Cyber Security Academy 2023. All Right Reserved. Terms & Conditions. Privacy Policy.</small>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</body>
+
+</html>
