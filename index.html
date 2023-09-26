@@ -16,7 +16,7 @@
   <script defer src="js/main.js"></script>
 </head>
 
-<body class="page__body">
+<body class="page__body" id="page__body">
   <div class="site-container">
     <header class="header">
   <div data-menu-overlay></div>
@@ -25,22 +25,22 @@
       <a class="header__logo">
         <img src="./img/logo.svg" alt="Logo">
       </a>
-      <nav class="header__nav" data-menu>
+      <nav class="header__nav">
         <ul class="header__list list-reset">
           <li class="header__item">
-            <a href="#" class="header__link" data-menu-item>Home</a>
+            <a href="#" class="header__link">Home</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link" data-menu-item>Course Program</a>
+            <a href="#learn" class="header__link">Course Program</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link" data-menu-item>Benefits</a>
+            <a href="#benefits" class="header__link">Benefits</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link" data-menu-item>Testimonials</a>
+            <a href="#testimonials" class="header__link">Testimonials</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link" data-menu-item>Take Discovery Call</a>
+            <a href="#take" class="header__link">Take Discovery Call</a>
           </li>
         </ul>
       </nav>
@@ -55,12 +55,12 @@
 </header>
 
     <main class="main">
-      <section class="certification section-margin">
+      <section class="certification section-margin hero">
   <div class="certification__container container">
     <div class="certification__left">
       <h1 class="certification__title main-title">Get Cybersecurity Certification: A Dynamic 10-Day Online Course</h1>
       <p class="certification__desc desc-basic">Schedule a discovery call to learn how our 10-day course can accelerate your cybersecurity skills from zero to hero.</p>
-      <form class="certification__form form">
+      <form id="take" class="certification__form form" data-scroll>
         <input type="text" placeholder="Name" class="form__field form__field--half name" name="name">
         <input type="email" placeholder="E-mail" class="form__field form__field--half email" name="email">
         <div class="form__field form__field-wrap">
@@ -97,7 +97,7 @@
   </div>
 </section>
 
-      <section class="learn">
+      <section id="learn" class="learn" data-scroll>
   <div class="container learn__container">
     <div class="learn__inner">
       <h1 class="learn__title main-title">What is CCT and what you will learn?</h1>
@@ -309,7 +309,7 @@
   </div>
 </section>
 
-      <section class="choose">
+      <section id="benefits" class="choose" data-scroll>
   <div class="container choose__container">
     <div class="choose__inner">
       <div class="choose__top">
@@ -334,7 +334,7 @@
   </div>
 </section>
 
-      <section class="say">
+      <section id="testimonials" class="say" data-scroll>
   <div class="container say__container">
     <div class="say__inner">
       <h1 class="say__title main-title">What our students say?</h1>
@@ -522,6 +522,13 @@
       </ul>
       <small class="footer__copyright desc-basic">© Cyber Security Academy 2023. All Right Reserved. Terms & Conditions. Privacy Policy.</small>
     </div>
+    <a href="#page__body" data-scroll class="to-top">
+      <span class="to-top__icon">
+        <svg>
+          <use xlink:href="img/sprite.svg#to-top"></use>
+        </svg>
+      </span>
+    </a>
   </div>
 </footer>
 

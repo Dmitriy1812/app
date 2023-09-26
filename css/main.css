@@ -206,6 +206,7 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 var(--container-offset);
+  max-width: var(--container-width);
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -1374,6 +1375,47 @@ blockquote {
   color: var(--error-stroke);
 }
 
+.to-top {
+  position: fixed;
+  right: 5%;
+  bottom: 80px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+@media (max-width: 1440px) {
+  .to-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+.to-top__icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  color: #7D7C85;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+@media (any-hover: hover) {
+  .to-top__icon:hover {
+    color: #302d3d;
+  }
+}
+.to-top__icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.to-top--active {
+  opacity: 1;
+  visibility: visible;
+}
+
 .header {
   position: relative;
   z-index: 1;
@@ -1485,17 +1527,22 @@ blockquote {
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transform-origin: 0%;
-  -ms-transform-origin: 0%;
-  transform-origin: 0%;
+  -webkit-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 @media (any-hover: hover) {
   .header__link:hover::after, .header__phone:hover::after {
     -webkit-transform: scaleX(1);
     -ms-transform: scaleX(1);
     transform: scaleX(1);
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
   }
 }
 @media (max-width: 1200px) {
