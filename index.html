@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
   <title>CSA</title>
-  <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin> -->
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -60,17 +60,18 @@
     <div class="certification__left">
       <h1 class="certification__title main-title">Get Cybersecurity Certification: A Dynamic 10-Day Online Course</h1>
       <p class="certification__desc desc-basic">Schedule a discovery call to learn how our 10-day course can accelerate your cybersecurity skills from zero to hero.</p>
+      <!-- <p id="output">Please enter a valid number below</p> -->
       <form id="take" class="certification__form form" data-scroll>
         <input type="text" placeholder="Name" class="form__field form__field--half name" name="name">
         <input type="email" placeholder="E-mail" class="form__field form__field--half email" name="email">
         <div class="form__field form__field-wrap">
-          <input type="tel" class="form__field inputForSelect input-tel tel" name="tel">
-          <select name="select">
+          <input id="phone" type="tel" class="form__field inputForSelect input-tel tel" name="tel">
+          <!-- <select name="select">
             <option data-country-flag="canada" value="canada" label="canada"></option>
             <option data-country-flag="urugvay" value="urugvay"  label="urugvay"></option>
             <option data-country-flag="china" value="china"  label="china"></option>
             <option data-country-flag="argentina" value="argentina"  label="argentina"></option>
-          </select>
+          </select> -->
         </div>
         <button class="form__field form__submit-btn">Take Discovery Call</button>
         <p class="form-message-wrong" role="alert">Oops! Something went wrong while submitting the form.</p>

@@ -5,6 +5,7 @@
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --color-light: #fff;
   --color-aqua: #b1e0df;
+  --color-cyan-900: #0EAAA3;
   --color-mine-shaft: #222;
   --color-god-gray: #111;
   --color-amber: #fabd05;
@@ -211,6 +212,11 @@ a {
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+input.focus-visible,
+.form__submit-btn.focus-visible {
+  outline: 3px solid var(--color-cyan-900);
 }
 
 .centered {
@@ -1207,7 +1213,7 @@ blockquote {
   bottom: 0;
   width: 100%;
   height: 100%;
-  padding-left: 70px;
+  padding-left: 80px;
 }
 .form__field--half {
   -ms-grid-column-span: 1;
@@ -1253,11 +1259,13 @@ blockquote {
 }
 
 .select2 {
-  width: 50px !important;
+  width: 55px !important;
 }
 
-.select2-container {
+.select2.select2-container {
   position: absolute;
+  height: 100%;
+  left: 5px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -1271,16 +1279,28 @@ blockquote {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 28px;
+  height: 100%;
 }
 
 .select2-container .select2-selection--single {
-  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 70%;
 }
 
 .select2-container--default .select2-selection--single {
+  padding-left: 5px;
   border: none;
   background-color: transparent;
+}
+.select2-container--default .select2-selection--single.focus-visible {
+  border: var(--border-main);
+  border-radius: 5px;
+  outline: 3px solid var(--color-cyan-900);
 }
 
 .select2-container .select2-selection--single .select2-selection__rendered {
@@ -1391,7 +1411,6 @@ blockquote {
     bottom: 20px;
   }
 }
-
 .to-top__icon {
   display: block;
   width: 40px;
@@ -1410,10 +1429,27 @@ blockquote {
   height: 100%;
   fill: currentColor;
 }
-
 .to-top--active {
   opacity: 1;
   visibility: visible;
+}
+
+.iti {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+}
+.iti__selected-flag {
+  padding: 0 6px 0 11px;
+}
+.iti__country-list {
+  border: var(--border-main);
+  border-radius: 5px;
+  overflow: initial;
+}
+.simplebar-horizontal {
+  display: none;
 }
 
 .header {
